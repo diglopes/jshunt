@@ -1,0 +1,33 @@
+.product {
+    max-width: 700px;
+    margin: 20px auto 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.product h1 {
+    font-size: 38px;
+    border-bottom: 1px solid #ccc;
+}
+
+.product p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.product a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    background: #da552f;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.product a:hover {
+    opacity: 0.7;
+}
