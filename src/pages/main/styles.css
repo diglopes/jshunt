@@ -19,9 +19,9 @@
 }
 
 .products-list article a {
-    color: #da552f;
+    color: rgba(69, 86, 102, 1);
     text-decoration: none;
-    border: 2px solid #da552f;
+    border: 2px solid rgba(69, 86, 102, 1);
     height: 42px;
     background: none;
     font-weight: bold;
@@ -34,7 +34,7 @@
 }
 
 .products-list article a:hover {
-    background: #da552f;
+    background: rgba(69, 86, 102, 1);
     color: #fff;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .actions button {
-    background: #da552f;
+    background: rgba(69, 86, 102, 1);
     border: none;
     color: #fff;
     padding: 10px;
