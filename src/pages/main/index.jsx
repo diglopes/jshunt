@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import api from "../../services/api";
 import Loading from "../../components/LoadingComponent";
-import { Link } from "react-router-dom";
+import ProductComponent from "../../components/ProductComponent";
 
 import "./styles.css";
 
@@ -49,12 +49,7 @@ export default class Main extends Component {
         ) : (
           <div className="products-list">
             {products.map(product => (
-              <article key={product._id}>
-                <h2>{product.title}</h2>
-                <p>{product.description}</p>
-
-                <Link to={`/products/${product._id}`}>Acessar</Link>
-              </article>
+              <ProductComponent product={product} />
             ))}
             <div className="actions">
               <button disabled={page === 1} onClick={this.prevPage}>
