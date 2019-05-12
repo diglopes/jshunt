@@ -1,0 +1,33 @@
+.productComponent {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.productComponent p {
+    color: #666;
+    margin-top: 5px;
+    line-height: 24px;
+}
+
+.productComponent a {
+    color: rgba(69, 86, 102, 1);
+    text-decoration: none;
+    border: 2px solid rgba(69, 86, 102, 1);
+    height: 42px;
+    background: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: all ease 0.2s;
+}
+
+.productComponent a:hover {
+    background: rgba(69, 86, 102, 1);
+    color: #fff;
+}

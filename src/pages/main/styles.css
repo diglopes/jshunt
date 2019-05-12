@@ -4,47 +4,13 @@
     padding: 20px;
 }
 
-.products-list article {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-}
-
-.products-list article p {
-    color: #999;
-    margin-top: 5px;
-    line-height: 24px;
-}
-
-.products-list article a {
-    color: #da552f;
-    text-decoration: none;
-    border: 2px solid #da552f;
-    height: 42px;
-    background: none;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    margin-top: 15px;
-    transition: all ease 0.2s;
-}
-
-.products-list article a:hover {
-    background: #da552f;
-    color: #fff;
-}
-
 .actions {
     display: flex;
     justify-content: space-between;
 }
 
 .actions button {
-    background: #da552f;
+    background: rgba(69, 86, 102, 1);
     border: none;
     color: #fff;
     padding: 10px;
