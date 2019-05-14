@@ -4,6 +4,7 @@
     border-radius: 5px;
     border: 1px solid #ddd;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .productComponent p {

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import api from "../../services/api";
 import Loading from "../../components/LoadingComponent";
 import ProductComponent from "../../components/ProductComponent";
+import { Spring } from "react-spring/renderprops";
 
 import "./styles.css";
 
@@ -9,8 +10,7 @@ export default class Main extends Component {
   state = {
     products: [],
     productsInfo: {},
-    page: 1,
-    loading: true
+    page: 1
   };
 
   componentDidMount() {
@@ -18,6 +18,7 @@ export default class Main extends Component {
   }
 
   loadProducts = async (page = 1) => {
+    this.setState({ loading: true });
     const { data } = await api.get(`/products?page=${page}`);
     const { docs, ...productsInfo } = data;
     this.setState({ products: docs, productsInfo, page, loading: false });
@@ -48,8 +49,18 @@ export default class Main extends Component {
           <Loading />
         ) : (
           <div className="products-list">
-            {products.map(product => (
-              <ProductComponent product={product} />
+            {products.map((product, index) => (
+              <Spring
+                from={{ opacity: 0, transform: "translate3d(400px, 0, 0)" }}
+                to={{ opacity: 1, transform: "translate3d(0, 0px, 0)" }}
+                config={{ delay: 100 * (index + 1) }}
+              >
+                {style => (
+                  <div style={style}>
+                    <ProductComponent product={product} />
+                  </div>
+                )}
+              </Spring>
             ))}
             <div className="actions">
               <button disabled={page === 1} onClick={this.prevPage}>

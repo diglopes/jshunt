@@ -9,6 +9,7 @@
 
 .product h1 {
     font-size: 38px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
 }
 
@@ -30,4 +31,22 @@
 
 .product a:hover {
     opacity: 0.7;
+}
+
+.slide-enter {
+    opacity: 0.01
+}
+
+.slide-enter.slide-enter-active {
+    opacity: 1;
+    transition: all 500ms ease-in;
+}
+
+.slide-leave {
+    opacity: 1;
+}
+
+.slide-leave.slide-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
 }
